@@ -1,0 +1,11 @@
+<h2>{{category}}</h2>
+{{#each words}}
+{{#if long}}
+<span class="short">{{string}}</span>
+{{else}}
+<span class="long" onclick="translate({{string}})">{{string}}</span>
+{{/if}}
+{{/each}}
+<div>
+  <p id="translation"></p>
+</div>
